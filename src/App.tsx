@@ -282,16 +282,16 @@ function App() {
 
       {/* CTA Section */}
       <section className="py-24 bg-black text-white relative overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1506012787146-f92b2d7d6d96?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="Background texture" className="absolute inset-0 w-full h-full object-cover opacity-20" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+        <img src="https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=2000&auto=format&fit=crop&q=80" alt="Galaxy background" className="absolute inset-0 w-full h-full object-cover opacity-30" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent"></div>
         
         <div className="max-w-3xl mx-auto px-4 text-center relative z-10">
-          <h2 className="text-5xl font-bold mb-6 tracking-tight">Ready to go?</h2>
-          <p className="text-xl text-slate-300 mb-10">Join 50,000+ travellers moving faster than ever.</p>
+          <h2 className="text-5xl font-bold mb-6 tracking-tight">Ready for launch?</h2>
+          <p className="text-xl text-slate-300 mb-10">Join 2<sup>15</sup>+ space travelers moving at light speed.</p>
           <a href="#" className="inline-block bg-white text-black px-10 py-4 rounded-full font-bold text-lg hover:bg-slate-100 transition-colors shadow-xl hover:scale-105 transform duration-200">
-            Get started with Hoppr
+            Begin your journey →
           </a>
-          <p className="mt-6 text-sm text-slate-500">Starting at just $5/trip</p>
+          <p className="mt-6 text-sm text-slate-500">Starting at just $5/mission</p>
         </div>
       </section>
 
