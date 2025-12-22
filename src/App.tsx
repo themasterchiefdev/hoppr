@@ -44,60 +44,60 @@ function App() {
               <div className="animate-slide-up opacity-0" style={{ animationDelay: '0.1s' }}>
                 <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-50 border border-brand-100 text-xs font-bold text-brand-600 mb-6 uppercase tracking-wider">
                   <span className="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></span>
-                  Live for 2025
+                  Now boarding: 2025
                 </span>
               </div>
 
               <h1 className="text-5xl lg:text-7xl font-extrabold tracking-tight mb-6 leading-[1.1] animate-slide-up opacity-0" style={{ animationDelay: '0.2s' }}>
-                Travel happens. <br />
-                <span className="text-slate-400">We handle the rest.</span>
+                Space travel happens. <br />
+                <span className="text-slate-400">We orbit the chaos.</span>
               </h1>
 
               <p className="text-xl text-slate-500 mb-8 leading-relaxed animate-slide-up opacity-0" style={{ animationDelay: '0.3s' }}>
-                Trips change. Flights delay. Bags go missing. <br />
-                Hoppr is the AI-powered protection that pays you instantly, without the paperwork.
+                Rockets delay. Asteroids interfere. Luggage lands on Europa. <br />
+                Hoppr is the AI-powered protection that pays you at light speed.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 animate-slide-up opacity-0" style={{ animationDelay: '0.4s' }}>
                 <button className="px-8 py-4 bg-black text-white rounded-full font-bold text-lg hover:bg-slate-800 transition-all shadow-xl hover:shadow-2xl hover:-translate-y-1 flex items-center justify-center gap-2">
-                  Get protected
+                  Launch coverage →
                 </button>
                 <button className="px-8 py-4 bg-white text-slate-900 border border-slate-200 rounded-full font-bold text-lg hover:bg-slate-50 transition-all shadow-sm hover:shadow-md flex items-center justify-center gap-2 group">
                   <PlayCircle className="w-5 h-5" />
-                  See how it works
+                  Mission briefing
                 </button>
               </div>
             </div>
 
             {/* Hero Images Collage */}
             <div className="relative h-[600px] w-full hidden lg:block animate-fade-in opacity-0" style={{ animationDelay: '0.5s' }}>
-              {/* Image 1: Main Portrait */}
+              {/* Image 1: Main Portrait - Mars Rover */}
               <div className="absolute right-0 top-0 w-80 h-96 rounded-3xl overflow-hidden shadow-2xl image-card z-10">
-                <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Traveler looking at map" className="w-full h-full object-cover" />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                <img src="https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?w=800&auto=format&fit=crop&q=80" alt="Mars landscape" className="w-full h-full object-cover" />
+                <div className="absolute inset-0 bg-gradient-to-t from-red-950/60 to-transparent"></div>
                 <div className="absolute bottom-6 left-6 text-white">
-                  <p className="text-sm font-medium opacity-90">Protected Trip</p>
-                  <p className="font-bold text-lg">Kyoto, Japan</p>
+                  <p className="text-sm font-medium opacity-90">Protected Mission</p>
+                  <p className="font-bold text-lg">Olympus Mons, Mars</p>
                 </div>
               </div>
 
-              {/* Image 2: Landscape/Context */}
+              {/* Image 2: Landscape/Context - Space/Earth view */}
               <div className="absolute right-64 top-40 w-72 h-72 rounded-3xl overflow-hidden shadow-xl image-card border-4 border-white z-0">
-                <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Airplane wing view" className="w-full h-full object-cover opacity-90" />
+                <img src="https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?w=800&auto=format&fit=crop&q=80" alt="Space view" className="w-full h-full object-cover opacity-90" />
               </div>
 
-              {/* Image 3: Detail/Lifestyle */}
-              <div className="absolute right-40 bottom-20 w-64 h-48 rounded-2xl overflow-hidden shadow-xl image-card border-4 border-white z-20 bg-white p-4">
-                <div className="flex items-center gap-3 mb-3 border-b border-slate-100 pb-3">
+              {/* Image 3: Detail/Lifestyle - Claim card */}
+              <div className="absolute right-40 bottom-20 w-64 h-48 rounded-2xl overflow-hidden shadow-xl image-card border-4 border-white z-20 bg-gradient-to-br from-purple-50 to-blue-50 p-4">
+                <div className="flex items-center gap-3 mb-3 border-b border-purple-100 pb-3">
                   <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center text-green-600">
                     <Check className="w-4 h-4" />
                   </div>
                   <div>
                     <div className="text-xs text-slate-500">Claim Approved</div>
-                    <div className="font-bold text-sm">$450.00 Sent</div>
+                    <div className="font-bold text-sm">$4,500.00 Sent</div>
                   </div>
                 </div>
-                <div className="text-xs text-slate-400">Just now • Instant payout to Visa ending 4242</div>
+                <div className="text-xs text-slate-400">Just now • Instant payout to Galactic Credit ending 8472</div>
               </div>
             </div>
           </div>
