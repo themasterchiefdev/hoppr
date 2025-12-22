@@ -109,10 +109,12 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 text-center">
           <p className="text-sm text-slate-400 font-semibold uppercase tracking-widest mb-6">Trusted by travellers from</p>
           <div className="flex flex-wrap justify-center items-center gap-12 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_Bélo.svg/2560px-Airbnb_Logo_Bélo.svg.png" className="h-8 object-contain" alt="Airbnb" />
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Samsung_Logo.svg/2560px-Samsung_Logo.svg.png" className="h-6 object-contain" alt="Samsung" />
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Slack_icon_2019.svg/2048px-Slack_icon_2019.svg.png" className="h-8 object-contain" alt="Slack" />
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Skyscanner_Logo_Lockup_Pink_RGB.svg/2560px-Skyscanner_Logo_Lockup_Pink_RGB.svg.png" className="h-6 object-contain" alt="Skyscanner" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/SpaceX_logo_black.svg/2560px-SpaceX_logo_black.svg.png" className="h-6 object-contain" alt="SpaceX" />
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Blue_Origin_new_logo.svg" className="h-8 object-contain" alt="Blue Origin" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/2449px-NASA_logo.svg.png" className="h-12 object-contain" alt="NASA" />
+            <div className="bg-slate-900 px-4 py-2 rounded">
+              <img src="https://www.virgingalactic.com/_nuxt/logo.d501acba.svg" className="h-7 object-contain" alt="Virgin Galactic" />
+            </div>
           </div>
         </div>
       </div>
@@ -169,7 +171,7 @@ function App() {
 
             {/* Card 4: Visual (Medical) */}
             <div className="col-span-1 md:col-span-2 row-span-1 relative group overflow-hidden rounded-3xl shadow-sm">
-              <img src="https://images.unsplash.com/photo-1534068590799-09895a701ca7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Hiking adventure" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=800&auto=format&fit=crop&q=80" alt="Hiking adventure" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
               <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors"></div>
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center text-white">
