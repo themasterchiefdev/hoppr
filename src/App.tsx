@@ -22,7 +22,7 @@ function App() {
             <div className="hidden md:flex items-center gap-8">
               <a href="#how" className="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors">How it works</a>
               <a href="#why" className="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors">Why Hoppr</a>
-              <a href="#" className="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors">Sign in</a>
+              <a href="#contact" className="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors">Contact us</a>
               <a href="#" className="bg-black text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-slate-800 transition-colors">Get protected</a>
             </div>
 
@@ -307,35 +307,39 @@ function App() {
               &copy; 2025 Hoppr Inc.
             </div>
           </div>
-          <div className="border-t border-slate-100 pt-8">
+          <div className="border-t border-slate-100 pt-8" id="contact">
             <p className="text-xs text-slate-400 text-center mb-4 uppercase tracking-wider font-semibold">Our Offices</p>
             <div className="flex flex-wrap justify-center items-center gap-8 text-sm">
               <div className="flex items-center gap-2">
                 <span className="text-2xl">🌍</span>
                 <div className="text-left">
                   <div className="font-bold text-slate-900 text-xs">Earth HQ</div>
-                  <div className="text-xs text-slate-500">Main Operations</div>
+                  <div className="text-xs text-slate-500">Amundsen-Scott Station</div>
+                  <div className="text-xs text-slate-400">South Pole</div>
                 </div>
               </div>
               <div className="flex items-center gap-2">
                 <span className="text-2xl">🌙</span>
                 <div className="text-left">
                   <div className="font-bold text-slate-900 text-xs">Moon Station</div>
-                  <div className="text-xs text-slate-500">Active Branch</div>
+                  <div className="text-xs text-slate-500">Shackleton Crater</div>
+                  <div className="text-xs text-slate-400">South Lunar Pole</div>
                 </div>
               </div>
               <div className="flex items-center gap-2">
                 <span className="text-2xl">🔴</span>
                 <div className="text-left">
                   <div className="font-bold text-slate-900 text-xs">Mars Outpost</div>
-                  <div className="text-xs text-brand-500">Coming Soon</div>
+                  <div className="text-xs text-slate-500">Olympus Mons Summit</div>
+                  <div className="text-xs text-brand-500">Coming 2026</div>
                 </div>
               </div>
               <div className="flex items-center gap-2">
                 <span className="text-2xl">🤖</span>
                 <div className="text-left">
                   <div className="font-bold text-slate-900 text-xs">AI Branches</div>
-                  <div className="text-xs text-slate-500">Everywhere Else</div>
+                  <div className="text-xs text-slate-500">Quantum Network</div>
+                  <div className="text-xs text-slate-400">Entangled Everywhere</div>
                 </div>
               </div>
             </div>
