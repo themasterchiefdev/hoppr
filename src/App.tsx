@@ -194,30 +194,30 @@ function App() {
       <section className="py-24 bg-slate-50" id="why">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-4xl font-bold text-slate-900 mb-4">Protection that looks like this.</h2>
-            <p className="text-xl text-slate-500">No more PDFs. No more phone queues. Just a modern app for modern travel.</p>
+            <h2 className="text-4xl font-bold text-slate-900 mb-4">Coverage across the cosmos.</h2>
+            <p className="text-xl text-slate-500">From Earth orbit to the outer planets. Protection that travels at the speed of light.</p>
           </div>
 
           {/* Bento Grid */}
           <div className="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-6 h-auto md:h-[600px]">
             
-            {/* Card 1: Large Visual (Anticipate) */}
+            {/* Card 1: Large Visual (Mars) */}
             <div className="col-span-1 md:col-span-2 row-span-2 relative group overflow-hidden rounded-3xl shadow-lg">
-              <img src="https://images.unsplash.com/photo-1569154941061-e231b4725ef1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Airport terminal" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+              <img src="https://images.unsplash.com/photo-1614732414444-096e5f1122d5?w=800&auto=format&fit=crop&q=80" alt="Mars surface" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <div className="absolute inset-0 bg-gradient-to-t from-red-950/90 via-red-900/20 to-transparent"></div>
               <div className="absolute bottom-0 left-0 p-8 text-white">
-                <div className="w-12 h-12 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center mb-4 border border-white/30">
+                <div className="w-12 h-12 bg-red-500/30 backdrop-blur-md rounded-xl flex items-center justify-center mb-4 border border-red-400/30">
                   <Radar className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold mb-2">We watch the skies</h3>
-                <p className="text-slate-200 text-sm leading-relaxed max-w-sm">
-                  Hoppr connects to global flight data. If your flight is delayed, we know instantly—often before the pilot announces it.
+                <h3 className="text-2xl font-bold mb-2">Mars Mission Coverage</h3>
+                <p className="text-red-100 text-sm leading-relaxed max-w-sm">
+                  Dust storms, solar flares, or just missing the launch window? We've got you covered across 140 million miles of space.
                 </p>
               </div>
             </div>
 
-            {/* Card 2: Light UI (Lounge Access) */}
-            <div className="col-span-1 md:col-span-1 row-span-1 bg-white p-6 rounded-3xl shadow-sm border border-slate-100 flex flex-col justify-between group hover:border-brand-200 transition-colors">
+            {/* Card 2: Light UI (Space Station Lounge) */}
+            <div className="col-span-1 md:col-span-1 row-span-1 bg-gradient-to-br from-blue-50 to-purple-50 p-6 rounded-3xl shadow-sm border border-blue-100 flex flex-col justify-between group hover:border-brand-200 transition-colors">
               <div className="flex justify-between items-start">
                 <div className="w-10 h-10 bg-brand-50 rounded-full flex items-center justify-center text-brand-600">
                   <Coffee className="w-5 h-5" />
@@ -225,29 +225,30 @@ function App() {
                 <span className="text-xs font-bold bg-green-100 text-green-700 px-2 py-1 rounded-full">Active</span>
               </div>
               <div>
-                <h4 className="font-bold text-lg mb-1">Free Lounge Access</h4>
-                <p className="text-xs text-slate-500">Sent automatically if delayed &gt;2 hrs.</p>
+                <h4 className="font-bold text-lg mb-1">ISS Lounge Pass</h4>
+                <p className="text-xs text-slate-500">Zero-gravity coffee bar access included.</p>
               </div>
             </div>
 
-            {/* Card 3: Dark/Bold (Instant Pay) */}
-            <div className="col-span-1 md:col-span-1 row-span-1 bg-slate-900 text-white p-6 rounded-3xl shadow-lg flex flex-col justify-center relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-brand-500 rounded-full blur-[60px] opacity-40"></div>
-              <h4 className="text-3xl font-bold mb-1">$0</h4>
-              <p className="text-slate-400 text-sm mb-4">Deductible on all plans</p>
-              <div className="h-1 w-full bg-slate-800 rounded-full overflow-hidden">
-                <div className="h-full w-full bg-brand-500"></div>
+            {/* Card 3: Dark/Bold (Universal Coverage) */}
+            <div className="col-span-1 md:col-span-1 row-span-1 bg-gradient-to-br from-purple-950 to-slate-900 text-white p-6 rounded-3xl shadow-lg flex flex-col justify-center relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-purple-500 rounded-full blur-[60px] opacity-40"></div>
+              <div className="absolute -bottom-4 -left-4 text-6xl opacity-20">🌌</div>
+              <h4 className="text-3xl font-bold mb-1">∞</h4>
+              <p className="text-purple-200 text-sm mb-4">Light-years of coverage</p>
+              <div className="h-1 w-full bg-purple-900 rounded-full overflow-hidden">
+                <div className="h-full w-full bg-gradient-to-r from-purple-500 to-pink-500"></div>
               </div>
             </div>
 
-            {/* Card 4: Visual (Medical) */}
+            {/* Card 4: Visual (Venus/Space Exploration) */}
             <div className="col-span-1 md:col-span-2 row-span-1 relative group overflow-hidden rounded-3xl shadow-sm">
-              <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=800&auto=format&fit=crop&q=80" alt="Hiking adventure" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
-              <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors"></div>
+              <img src="https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?w=800&auto=format&fit=crop&q=80" alt="Space nebula" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-900/60 to-blue-900/60 group-hover:from-purple-900/70 group-hover:to-blue-900/70 transition-colors"></div>
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center text-white">
-                  <h3 className="text-2xl font-bold mb-1">Adventure Ready</h3>
-                  <p className="text-white/80 text-sm">Cover for hiking, skiing & more</p>
+                  <h3 className="text-2xl font-bold mb-1">Deep Space Ready</h3>
+                  <p className="text-white/90 text-sm">Coverage for asteroid mining, nebula tours & wormhole travel</p>
                 </div>
               </div>
             </div>
