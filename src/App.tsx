@@ -119,6 +119,77 @@ function App() {
         </div>
       </div>
 
+      {/* How It Works Section */}
+      <section className="py-24 bg-white" id="how">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-20">
+            <h2 className="text-4xl font-bold text-slate-900 mb-4">Works at warp speed. Almost literally.</h2>
+            <p className="text-xl text-slate-500">From Earth to orbit in three steps. No rocket science required.</p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-12">
+            {/* Step 1 */}
+            <div className="relative">
+              <div className="flex flex-col items-center text-center">
+                <div className="w-16 h-16 bg-brand-500 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-brand-500/30">
+                  <span className="text-2xl font-bold text-white">🚀</span>
+                </div>
+                <h3 className="text-xl font-bold mb-3">Launch your trip details</h3>
+                <p className="text-slate-600 leading-relaxed">
+                  Forward your booking. Email, screenshot, or telepathic transmission (coming soon). Our AI reads faster than a SpaceX launch countdown.
+                </p>
+              </div>
+              {/* Connector line */}
+              <div className="hidden md:block absolute top-8 left-1/2 w-full h-0.5 bg-gradient-to-r from-brand-500 to-brand-300 -z-10"></div>
+            </div>
+
+            {/* Step 2 */}
+            <div className="relative">
+              <div className="flex flex-col items-center text-center">
+                <div className="w-16 h-16 bg-brand-500 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-brand-500/30">
+                  <span className="text-2xl font-bold text-white">🛸</span>
+                </div>
+                <h3 className="text-xl font-bold mb-3">Mission Control mode activated</h3>
+                <p className="text-slate-600 leading-relaxed">
+                  We monitor everything. Flights, delays, gate changes, solar flares, Mercury retrograde. If it affects your trip, we're on it.
+                </p>
+              </div>
+              {/* Connector line */}
+              <div className="hidden md:block absolute top-8 left-1/2 w-full h-0.5 bg-gradient-to-r from-brand-300 to-brand-200 -z-10"></div>
+            </div>
+
+            {/* Step 3 */}
+            <div className="relative">
+              <div className="flex flex-col items-center text-center">
+                <div className="w-16 h-16 bg-brand-500 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-brand-500/30">
+                  <span className="text-2xl font-bold text-white">💸</span>
+                </div>
+                <h3 className="text-xl font-bold mb-3">Funds arrive at light speed</h3>
+                <p className="text-slate-600 leading-relaxed">
+                  Flight delayed? Money beams into your account faster than NASA can say "Houston." No forms. No waiting. Just intergalactic efficiency.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Visual callout */}
+          <div className="mt-20 bg-gradient-to-br from-brand-50 to-brand-100 rounded-3xl p-12 text-center border border-brand-200">
+            <div className="max-w-2xl mx-auto">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-white rounded-full mb-6 shadow-lg">
+                <span className="text-3xl">⚡</span>
+              </div>
+              <h3 className="text-2xl font-bold mb-4">Average payout time: 47 seconds</h3>
+              <p className="text-slate-600 text-lg mb-6">
+                That's 0.00001% of the time it takes to reach Mars. Faster than a rocket launch sequence. Quicker than a satellite orbiting Earth.
+              </p>
+              <button className="px-8 py-4 bg-black text-white rounded-full font-bold text-lg hover:bg-slate-800 transition-all shadow-xl hover:shadow-2xl hover:-translate-y-1">
+                Ready for liftoff →
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Solution Section (Visual Bento Grid) */}
       <section className="py-24 bg-slate-50" id="why">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
