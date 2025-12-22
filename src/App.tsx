@@ -191,17 +191,17 @@ function App() {
           <h2 className="text-3xl font-bold mb-12">Travelers love the new way.</h2>
           <div className="grid md:grid-cols-2 gap-8 text-left">
             <div className="bg-slate-50 p-6 rounded-2xl flex gap-4 items-start">
-              <img src="https://images.unsplash.com/photo-1522075469751-3a3694c2dd77?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" className="w-12 h-12 rounded-full object-cover" alt="User" />
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg/440px-Elon_Musk_Royal_Society_%28crop2%29.jpg" className="w-12 h-12 rounded-full object-cover" alt="User" />
               <div>
-                <p className="text-sm text-slate-600 font-medium mb-2">"I uploaded a photo of my doctor's note and had the money in my account before I left the clinic. Insane."</p>
-                <p className="text-xs font-bold text-slate-900">Marcus L. • Bali, Indonesia</p>
+                <p className="text-sm text-slate-600 font-medium mb-2">"Used Hoppr for our Mars missions. Rocket delays happen. Hoppr had my crew compensated before we even left the launch pad. Makes SpaceX look slow."</p>
+                <p className="text-xs font-bold text-slate-900">Elon M. • Boca Chica, Mars</p>
               </div>
             </div>
             <div className="bg-slate-50 p-6 rounded-2xl flex gap-4 items-start">
-              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" className="w-12 h-12 rounded-full object-cover" alt="User" />
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/300px-NASA_logo.svg.png" className="w-12 h-12 rounded-full object-cover bg-slate-900 p-2" alt="User" />
               <div>
-                <p className="text-sm text-slate-600 font-medium mb-2">"Hoppr texted me about my flight cancellation before the airline did. The lounge pass saved my sanity."</p>
-                <p className="text-xs font-bold text-slate-900">Sarah K. • London, UK</p>
+                <p className="text-sm text-slate-600 font-medium mb-2">"We've protected every mission from Apollo Oops to Artemis Uh-Oh. When our lunar lander got delayed 6 months, Hoppr paid out in 6 seconds. Houston, we have a solution."</p>
+                <p className="text-xs font-bold text-slate-900">Dr. Buzz McKraken • NASA Mission Control</p>
               </div>
             </div>
           </div>
