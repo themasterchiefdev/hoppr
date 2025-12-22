@@ -1,7 +1,10 @@
-import { Rabbit, Menu, PlayCircle, Check, Radar, Coffee } from 'lucide-react';
+import { Rabbit, Menu, PlayCircle, Check, Radar, Coffee, X, Rocket, Shield, Zap } from 'lucide-react';
+import { useState } from 'react';
 import './App.css';
 
 function App() {
+  const [showModal, setShowModal] = useState(false);
+  
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -59,7 +62,7 @@ function App() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 animate-slide-up opacity-0" style={{ animationDelay: '0.4s' }}>
-                <button className="px-8 py-4 bg-black text-white rounded-full font-bold text-lg hover:bg-slate-800 transition-all shadow-xl hover:shadow-2xl hover:-translate-y-1 flex items-center justify-center gap-2">
+                <button onClick={() => setShowModal(true)} className="px-8 py-4 bg-black text-white rounded-full font-bold text-lg hover:bg-slate-800 transition-all shadow-xl hover:shadow-2xl hover:-translate-y-1 flex items-center justify-center gap-2">
                   Launch coverage →
                 </button>
                 <button className="px-8 py-4 bg-white text-slate-900 border border-slate-200 rounded-full font-bold text-lg hover:bg-slate-50 transition-all shadow-sm hover:shadow-md flex items-center justify-center gap-2 group">
@@ -346,6 +349,124 @@ function App() {
           </div>
         </div>
       </footer>
+
+      {/* Launch Coverage Modal */}
+      {showModal && (
+        <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4 animate-fade-in">
+          <div className="bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto border border-blue-500/30 shadow-2xl shadow-blue-500/20">
+            {/* Header */}
+            <div className="sticky top-0 bg-slate-900/95 backdrop-blur-md border-b border-blue-500/30 p-6 flex items-center justify-between">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full flex items-center justify-center">
+                  <Rocket className="w-5 h-5 text-white" />
+                </div>
+                <div>
+                  <h2 className="text-2xl font-bold text-white">Mission Registration</h2>
+                  <p className="text-xs text-blue-300">Intergalactic Coverage Portal</p>
+                </div>
+              </div>
+              <button onClick={() => setShowModal(false)} className="text-slate-400 hover:text-white transition-colors">
+                <X className="w-6 h-6" />
+              </button>
+            </div>
+
+            {/* Content */}
+            <div className="p-8 text-white space-y-6">
+              {/* Welcome Message */}
+              <div className="bg-blue-500/10 border border-blue-500/30 rounded-2xl p-6">
+                <h3 className="text-xl font-bold mb-2 flex items-center gap-2">
+                  <Zap className="w-5 h-5 text-yellow-400" />
+                  Congratulations, Space Traveler!
+                </h3>
+                <p className="text-blue-100 text-sm leading-relaxed">
+                  You're about to join the most exclusive club in the galaxy. We protect everything from lost luggage on Titan to delayed rocket launches. Even that one time someone's pet hamster accidentally piloted a spacecraft to Alpha Centauri.
+                </p>
+              </div>
+
+              {/* Coverage Tiers */}
+              <div className="space-y-4">
+                <h3 className="text-lg font-bold flex items-center gap-2">
+                  <Shield className="w-5 h-5 text-green-400" />
+                  Choose Your Coverage Level
+                </h3>
+                
+                {/* Basic Plan */}
+                <div className="bg-slate-800/50 border border-slate-700 rounded-xl p-5 hover:border-blue-500/50 transition-all cursor-pointer">
+                  <div className="flex justify-between items-start mb-3">
+                    <div>
+                      <h4 className="font-bold text-lg">Orbit Hopper</h4>
+                      <p className="text-xs text-slate-400">For the casual moon weekender</p>
+                    </div>
+                    <span className="text-2xl font-bold text-blue-400">$5/mission</span>
+                  </div>
+                  <ul className="space-y-2 text-sm text-slate-300">
+                    <li>✓ Coverage up to Earth's orbit</li>
+                    <li>✓ Lost space snacks protection</li>
+                    <li>✓ Delays under 47 hours</li>
+                    <li>✓ Complimentary space sickness bag</li>
+                  </ul>
+                </div>
+
+                {/* Premium Plan */}
+                <div className="bg-gradient-to-br from-blue-900/40 to-purple-900/40 border-2 border-blue-500 rounded-xl p-5 hover:shadow-lg hover:shadow-blue-500/20 transition-all cursor-pointer relative overflow-hidden">
+                  <div className="absolute top-2 right-2 bg-yellow-400 text-black text-xs font-bold px-2 py-1 rounded-full">POPULAR</div>
+                  <div className="flex justify-between items-start mb-3">
+                    <div>
+                      <h4 className="font-bold text-lg">Mars Marathoner</h4>
+                      <p className="text-xs text-slate-300">For the interplanetary enthusiast</p>
+                    </div>
+                    <span className="text-2xl font-bold text-blue-300">$50/mission</span>
+                  </div>
+                  <ul className="space-y-2 text-sm text-blue-100">
+                    <li>✓ Full solar system coverage</li>
+                    <li>✓ Asteroid collision compensation</li>
+                    <li>✓ Solar flare delays covered</li>
+                    <li>✓ Lost luggage on any planet</li>
+                    <li>✓ 24/7 AI support (responds at light speed)</li>
+                  </ul>
+                </div>
+
+                {/* Ultimate Plan */}
+                <div className="bg-gradient-to-br from-purple-900/40 to-pink-900/40 border border-purple-500 rounded-xl p-5 hover:border-pink-500 transition-all cursor-pointer">
+                  <div className="flex justify-between items-start mb-3">
+                    <div>
+                      <h4 className="font-bold text-lg">Galactic God Mode</h4>
+                      <p className="text-xs text-purple-300">Because why stop at Mars?</p>
+                    </div>
+                    <span className="text-2xl font-bold text-purple-300">$500/mission</span>
+                  </div>
+                  <ul className="space-y-2 text-sm text-purple-100">
+                    <li>✓ Unlimited coverage (yes, even wormholes)</li>
+                    <li>✓ Black hole rescue included</li>
+                    <li>✓ Alien encounter legal defense</li>
+                    <li>✓ Time dilation compensation</li>
+                    <li>✓ Parallel universe mishaps covered</li>
+                    <li>✓ Concierge service in 42 languages (including binary)</li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Fine Print */}
+              <div className="bg-slate-800/30 border border-slate-700 rounded-xl p-5 text-xs text-slate-400 space-y-2">
+                <p className="font-bold text-slate-300">Terms & Conditions (The Fun Part)</p>
+                <p>* We cannot be held responsible if you accidentally break the space-time continuum.</p>
+                <p>* Encounters with sentient AI that become your new best friend are not covered.</p>
+                <p>* If you discover a new planet, naming it "Steve" voids your warranty.</p>
+                <p>* Coverage does not include "I told you not to press that button" incidents.</p>
+                <p>* Quantum entanglement side effects may occur. This is normal.</p>
+                <p>* By launching coverage, you agree that Mars is, in fact, cooler than Earth.</p>
+              </div>
+
+              {/* CTA */}
+              <button className="w-full bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-500 hover:to-cyan-500 text-white font-bold py-4 rounded-full transition-all shadow-lg hover:shadow-xl hover:scale-105 flex items-center justify-center gap-2">
+                <Rocket className="w-5 h-5" />
+                Initiate Launch Sequence
+              </button>
+              <p className="text-center text-xs text-slate-400">No credit card required (we accept moon rocks)</p>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
