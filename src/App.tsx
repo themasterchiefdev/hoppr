@@ -297,13 +297,48 @@ function App() {
 
       {/* Footer */}
       <footer className="bg-white border-t border-slate-200 py-12">
-        <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
-          <div className="flex items-center gap-2">
-            <Rabbit className="w-5 h-5 text-black" />
-            <span className="font-bold text-black">Hoppr</span>
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500 mb-8">
+            <div className="flex items-center gap-2">
+              <Rabbit className="w-5 h-5 text-black" />
+              <span className="font-bold text-black">Hoppr</span>
+            </div>
+            <div>
+              &copy; 2025 Hoppr Inc.
+            </div>
           </div>
-          <div>
-            &copy; 2025 Hoppr Inc.
+          <div className="border-t border-slate-100 pt-8">
+            <p className="text-xs text-slate-400 text-center mb-4 uppercase tracking-wider font-semibold">Our Offices</p>
+            <div className="flex flex-wrap justify-center items-center gap-8 text-sm">
+              <div className="flex items-center gap-2">
+                <span className="text-2xl">🌍</span>
+                <div className="text-left">
+                  <div className="font-bold text-slate-900 text-xs">Earth HQ</div>
+                  <div className="text-xs text-slate-500">Main Operations</div>
+                </div>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-2xl">🌙</span>
+                <div className="text-left">
+                  <div className="font-bold text-slate-900 text-xs">Moon Station</div>
+                  <div className="text-xs text-slate-500">Active Branch</div>
+                </div>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-2xl">🔴</span>
+                <div className="text-left">
+                  <div className="font-bold text-slate-900 text-xs">Mars Outpost</div>
+                  <div className="text-xs text-brand-500">Coming Soon</div>
+                </div>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-2xl">🤖</span>
+                <div className="text-left">
+                  <div className="font-bold text-slate-900 text-xs">AI Branches</div>
+                  <div className="text-xs text-slate-500">Everywhere Else</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </footer>
