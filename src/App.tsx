@@ -47,7 +47,7 @@ function App() {
               <div className="animate-slide-up opacity-0" style={{ animationDelay: '0.1s' }}>
                 <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-50 border border-brand-100 text-xs font-bold text-brand-600 mb-6 uppercase tracking-wider">
                   <span className="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></span>
-                  Now boarding: 2025
+                  Now boarding: 2026
                 </span>
               </div>
 
@@ -307,7 +307,7 @@ function App() {
               <span className="font-bold text-black">Hoppr</span>
             </div>
             <div>
-              &copy; 2025 Hoppr Inc.
+              &copy; 2026 Hoppr Inc.
             </div>
           </div>
           <div className="border-t border-slate-100 pt-8" id="contact">
